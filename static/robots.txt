@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://kosarlabdasport.hu/sitemap/sitemap-index.xml

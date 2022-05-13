@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules
+
+# Compiled output
+.cache
+public
+
+# Editor
+.DS_store
