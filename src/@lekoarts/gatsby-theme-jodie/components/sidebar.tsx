@@ -1,11 +1,13 @@
 /** @jsx jsx */
-import { jsx, get } from 'theme-ui'
+import Navigation from '@lekoarts/gatsby-theme-jodie/src/components/navigation'
+import useJodieConfig from '@lekoarts/gatsby-theme-jodie/src/hooks/use-jodie-config'
+import useSiteMetadata from '@lekoarts/gatsby-theme-jodie/src/hooks/use-site-metadata'
 import { Link } from 'gatsby'
 import { readableColor } from 'polished'
+import { get, jsx } from 'theme-ui'
 import Logo from '../icons/logo'
-import useSiteMetadata from '@lekoarts/gatsby-theme-jodie/src/hooks/use-site-metadata'
-import useJodieConfig from '@lekoarts/gatsby-theme-jodie/src/hooks/use-jodie-config'
-import Navigation from '@lekoarts/gatsby-theme-jodie/src/components/navigation'
+import LogoSmall from '../icons/logo-small'
+import isMobile from '../utils/isMobile'
 
 interface SidebarProps { bg: string }
 
@@ -38,8 +40,8 @@ const Sidebar: React.FunctionComponent<any> = ({ bg }: SidebarProps) => {
       }}
       data-testid='sidebar'
     >
-      <Link to={basePath} aria-label={`${siteTitle}, Back to Home`} sx={{ width: ['3rem', '4.5rem', '6rem', '10rem'] }}>
-        <Logo />
+      <Link to={basePath} aria-label={`${siteTitle}, Back to Home`} sx={{ width: ['6.5rem', '6.5rem', '8rem', '10rem'] }}>
+        { isMobile() ? <LogoSmall/> : <Logo/> }
       </Link>
       <div sx={{ py: 4, display: ['none', 'none', 'none', 'block'] }} />
       <Navigation bg={bg} />

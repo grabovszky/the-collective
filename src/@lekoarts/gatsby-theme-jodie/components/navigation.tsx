@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { readableColor } from "polished"
 import { replaceSlashes } from "@lekoarts/gatsby-theme-jodie/src/utils/replace-slashes"
 import useJodieConfig from "@lekoarts/gatsby-theme-jodie/src/hooks/use-jodie-config"
+import isMobile from "../utils/isMobile"
 
 const Navigation = ({ bg }: { bg: string }) => {
   const { navigation, basePath } = useJodieConfig()
@@ -32,7 +33,8 @@ const Navigation = ({ bg }: { bg: string }) => {
         variant: `navigation`,
       }}
     >
-      <ul>
+      { !isMobile() && (
+        <ul>
         {navigation.map((navItem) => (
           <li key={navItem.slug}>
             <Link sx={(t) => ({ ...t.styles?.a })} to={replaceSlashes(`/${basePath}/${navItem.slug}`)} partiallyActive={true}>
@@ -41,6 +43,7 @@ const Navigation = ({ bg }: { bg: string }) => {
           </li>
         ))}
       </ul>
+      )}
     </nav>
   )
 }
