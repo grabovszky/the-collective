@@ -5,7 +5,7 @@ const NotFound: React.FunctionComponent<any> = () => (
   <Layout>
     <div style={{ textAlign: 'center' }}>
       <h1>404</h1>
-      <p>A keresett oldal nem található.</p>
+      <p>The page you are looking for is not found.</p>
     </div>
   </Layout>
 )

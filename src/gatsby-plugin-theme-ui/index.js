@@ -9,10 +9,6 @@ const theme = merge(originalTheme, {
   colors: {
     primary: `#E2007A`,
     primaryLight: `#53284F`,
-    //secondary: tailwind.colors.indigo[6],
-    //heading: tailwind.colors.black,
-    //background: tailwind.colors.white,
-    //text: tailwind.colors.gray[9],
     textMuted: `#46505f`,
     textMutedLight: `#a0aab8`,
   },

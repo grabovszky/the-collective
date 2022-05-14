@@ -7,12 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Table of Contents
 
-- [[1.0.0] - 2022-02-18 - Initial release](#100---2022-02-18---initial-release)
+- [[1.0.0] - 2022-05-14 - Initial release](#100---2022-05-14---initial-release)
 
-## [1.0.0] - 2022-02-18 - Initial release
+## [1.0.0] - 2022-05-14 - Initial release
 
 ### Added
 
 - Initial release
 
-[1.0.0]: https://github.com/grabovszky/kosarlabdasport
+[1.0.0]: https://github.com/grabovszky/the-collective

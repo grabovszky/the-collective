@@ -23,7 +23,7 @@ module.exports = {
           { name: 'Design', slug: '/blog' },
           { name: 'Development', slug: '/blog' },
           { name: 'Marketing', slug: '/blog' },
-          { name: 'Events', slug: '/blog' }
+          { name: 'Events', slug: '/blog' },
         ],
         projectsPath: 'content/blog',
         projectsUrl: '/blog',

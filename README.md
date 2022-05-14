@@ -1,4 +1,4 @@
-# Kosarlabdasport website
+# The Collective
 
 ## Table of Contents
 
@@ -17,8 +17,7 @@
 
 ## About The Project
 
-Kosarlabdasport website is an image heavy blog for a Hungarian basketball team.
-
+The Collective is a colorful, image focused, and responsive blog, designed and developed for Community International.
 ### Built With
 
 - [React](https://reactjs.org)
@@ -35,9 +34,9 @@ Kosarlabdasport website is an image heavy blog for a Hungarian basketball team.
 ### Installation
 
 ```bash
-git clone https://github.com/grabovszky/kosarlabdasport.git
-cd kosarlabdasport
-npm i --legacy-peer-dependencies
+git clone https://github.com/grabovszky/the-collective.git
+cd the-collective
+npm i
 ```
 
 ## Usage
@@ -58,7 +57,7 @@ This project is copyright (c) 2022 Kristóf Gábor. For more information about h
 
 ## Changelog
 
-All notable changes to this project will be documented in [CHANGELOG.md](https://github.com/grabovszky/kosarlabdasport/README.md).
+All notable changes to this project will be documented in [CHANGELOG.md](https://github.com/grabovszky/the-collective/CHANGELOG.md).
 
 ## Code Style
 
@@ -76,4 +75,4 @@ For a detailed explanation of the project please refer to the `/docs`.
 
 Kristóf Gábor - [gaborkristof@protonmail.com](gaborkristof@protonmail.com)
 
-Project Link: [https://github.com/grabovszky/kosarlabdasport](https://github.com/grabovszky/kosarlabdasport)
+Project Link: [github.com/grabovszky/the-collective](https://github.com/grabovszky/the-collective)

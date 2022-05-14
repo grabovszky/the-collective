@@ -1,25 +1,26 @@
 /** @jsx jsx */
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
+import { window } from 'browser-monads-ts';
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
-
-export default function isMobile() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+function isMobile() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
   useEffect(() => {
     function handleResize() {
-      setWindowDimensions(getWindowDimensions());
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     }
-
     window.addEventListener('resize', handleResize);
+    handleResize();
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return windowDimensions.width <= 1024;
+  return windowSize.width < 1024;
 }
+
+export default isMobile;

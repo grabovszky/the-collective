@@ -1,5 +1,5 @@
-const modifyGrid = (data) => {
-  return data
-}
+import { onlyProjects } from "@lekoarts/gatsby-theme-jodie/src/utils/resolver-templates";
 
-export default modifyGrid
+const modifyGrid = (data) => onlyProjects(data);
+
+export default modifyGrid;
